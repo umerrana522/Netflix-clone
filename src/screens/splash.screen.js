@@ -13,11 +13,11 @@ import {
 } from 'react-native';
 
 const SplashScreen = ({navigation}) => {
-  nav = navigation;
+
 
   function moveToUserScreen() {
     console.log('moveToUserScreen is called');
-    nav.navigate('UserSelectionScreen');
+    navigation.navigate('UserSelectionScreen');
   }
 
   useEffect(() => {

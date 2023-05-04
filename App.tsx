@@ -6,7 +6,6 @@ import SplashScreen from './src/screens/splash.screen';
 import UserSelectionScreen from './src/screens/user.selection.scren';
 import HomeScreen from './src/screens/home.screen';
 import MovieDetailsScreen from './src/screens/movie.details.screen';
-
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -14,18 +13,18 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="SplashScreen"
+          name="SplashScreenash"
           component={SplashScreen}
           options={{headerShown: false}}
         />
 
-        <Stack.Screen
+         <Stack.Screen
           name="UserSelectionScreen"
           component={UserSelectionScreen}
           options={{headerShown: false}}
         />
 
-        <Stack.Screen
+      {/*  <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
           options={{headerShown: false}}
@@ -35,7 +34,7 @@ const App = () => {
           name="MovieDetailsScreen"
           component={MovieDetailsScreen}
           options={{headerShown: false}}
-        />
+        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
